@@ -1,0 +1,24 @@
+<body>
+  <h1>Hello World</h1>
+  <section id="plantas">
+    <ul>
+      <% allPlants.forEach((plantas){=> %>
+
+      <li>
+        <div>
+          <h2><%= plantas.nome %></h2>
+
+          <p>Forma de cultivo: <%= plantas.formacultivo %></p>
+
+          <p><%= plantas.florada %></p>
+
+          <p><%= plantas.cuidados %></p>
+
+          <p><%= plantas.categoria %></p>
+        </div>
+      </li>
+
+      <% }) %>
+    </ul>
+  </section>
+</body>
